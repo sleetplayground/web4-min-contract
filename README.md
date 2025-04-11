@@ -59,7 +59,7 @@ The contract uses two storage keys:
 
 ## Default Content
 When no static URL is set, the contract serves content from:
-```ipfs://bafybeidc4lvv4bld66h4rmy2jvgjdrgul5ub5s75vbqrcbjd3jeaqnyd5e```
+```ipfs://bafybeid5zaqcoehq2njydv6nwbw5c2xkkvvstnspeqr5y72sslbw2zgxn4```
 This contains instructions for getting started.
 
 ## Access Control

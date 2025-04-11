@@ -2,9 +2,9 @@ const std = @import("std");
 
 // NOTE: In smart contract context don't really have to free memory before execution ends
 const builtin = @import("builtin");
-var allocator = if (builtin.cpu.arch == .wasm32) 
-    std.heap.wasm_allocator 
-else 
+var allocator = if (builtin.cpu.arch == .wasm32)
+    std.heap.wasm_allocator
+else
     std.heap.page_allocator;
 
 // Import host functions provided by NEAR runtime.
@@ -106,7 +106,7 @@ fn assertSelfOrOwner() void {
 }
 
 // Default URL, contains some instructions on what to do next
-pub const DEFAULT_STATIC_URL = "ipfs://bafybeidc4lvv4bld66h4rmy2jvgjdrgul5ub5s75vbqrcbjd3jeaqnyd5e";
+pub const DEFAULT_STATIC_URL = "ipfs://bafybeid5zaqcoehq2njydv6nwbw5c2xkkvvstnspeqr5y72sslbw2zgxn4";
 
 // Helper function to check if a path has a file extension
 fn hasFileExtension(path: []const u8) bool {
@@ -117,7 +117,6 @@ fn hasFileExtension(path: []const u8) bool {
     }
     return false;
 }
-
 
 // Main entry point for web4 contract.
 pub export fn web4_get() void {
